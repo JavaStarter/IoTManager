@@ -46,7 +46,7 @@ void sendRequest(byte packet[]) {
 }
 
 float yourSensorReading(String type, String paramsAny) {
-    float value;
+    float value = 0.0;
     //========================================================HDC1080================================================================
     if (type == "HDC1080_temp") {
         HDC1080_init(jsonReadStr(paramsAny, "addr"));
